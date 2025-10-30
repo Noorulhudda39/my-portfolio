@@ -1,0 +1,160 @@
+/* ===== Base Reset ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #080808;
+  color: #e9eef1;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* ===== Container ===== */
+.container { width: 90%; max-width: 1100px; margin: 0 auto; }
+
+/* ===== Header ===== */
+header {
+  background: #101010;
+  padding: 1rem 0;
+  border-bottom: 1px solid #111;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #00ffff;
+}
+
+.logo span { color: #ffd86b; }
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #e9eef1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #00ffff;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=60') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 2.2rem;
+}
+
+.hero-content h2 span {
+  color: #00ffff;
+}
+
+.hero-content p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  background: #00ffff;
+  color: #080808;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #ffd86b;
+}
+
+/* ===== About ===== */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.about-container img {
+  width: 300px;
+  border-radius: 12px;
+}
+
+.about-text { max-width: 600px; }
+
+/* ===== Projects ===== */
+.projects {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #111;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* ===== Contact ===== */
+.contact {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background: #101010;
+  border-top: 1px solid #111;
+}
+
+footer a {
+  color: #00ffff;
+  text-decoration: none;
+}
+ 
